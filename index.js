@@ -34,7 +34,6 @@ CREACIÓN DE UNA TARJETA DE PRODUCTOS USANDO TAGTEMPLATE - DOM
 const displayProduct = (product) => {
   const container = document.createElement("section");
   container.classList.add("container");
-  // container.setAttribute("id", "productSection");
   const productElement = document.createElement("article");
 
   productElement.classList.add("card");
