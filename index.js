@@ -165,6 +165,7 @@ searchbutton.addEventListener("click", () => {
 const resetbutton = document.querySelector("#button-reset");
 resetbutton.addEventListener("click", () => {
   document.querySelector("#price").value = "";
+  document.querySelector("#seller-options").value = "";
   const container = document.querySelector(".container");
   container.innerHTML = "";
   products.forEach((product) => {
