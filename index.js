@@ -168,6 +168,14 @@ resetbutton.addEventListener("click", () => {
   const defaultSellerOption = "";
   document.querySelector("#price").value = "";
   document.querySelector("#seller-options").value = "";
+  currentSeller = "";
+  const productSection = document.querySelector(".container");
+  productSection.innerHTML = "";
+  function resetFilters() {
+    priceInput.value = defaultPriceValue;
+    sellerOptions.value = defaultSellerOption;
+  }
+
   const container = document.querySelector(".container");
   container.innerHTML = "";
   products.forEach((product) => {
